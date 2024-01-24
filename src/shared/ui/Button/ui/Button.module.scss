@@ -1,0 +1,25 @@
+.Button {
+    cursor: pointer;
+    background-color: #242424;
+    padding: 10px;
+    font-size: 17pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    margin-right: 30px;
+
+    &:hover {
+        outline: 2px solid #56FABB;
+        transition: 0.15s;
+        box-shadow: 0 0 20px 1px #56FABB;
+    }
+}
+
+@media (max-width: 360px) {
+    .Button {
+        font-size: 14pt;
+        margin-right: 15px;
+    }
+}

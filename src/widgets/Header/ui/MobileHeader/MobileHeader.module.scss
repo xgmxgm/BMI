@@ -1,0 +1,36 @@
+.MobileHeader {
+    margin: 30px 0;
+
+    .MobileHeader__Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .Title {
+            font-weight: 400;
+
+            .Author {
+                font-weight: 600;
+                font-size: 30pt;
+
+                background: -webkit-linear-gradient(#49FEBA, #E2FFAA);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .MobileHeader {
+        margin: 15px 30px;
+
+        .MobileHeader__Content {
+            .Title {
+                .Author {
+                    font-size: 20pt;
+                }
+            }
+        }
+    }
+}

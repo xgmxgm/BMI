@@ -1,0 +1,22 @@
+.DesktopHeader {
+    margin: 30px 0;
+
+    .DesktopHeader__Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .Title {
+            font-weight: 400;
+
+            .Author {
+                font-weight: 600;
+                font-size: 30pt;
+
+                background: -webkit-linear-gradient(#49FEBA, #E2FFAA);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+}

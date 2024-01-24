@@ -1,0 +1,94 @@
+.Range {
+    margin: 20px 0;
+    max-width: 600px;
+
+    .Range__Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .Content__Up {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 500px;
+
+            .Title {
+                font-size: 17pt;
+                font-weight: 400;
+            }
+            
+            .Range__Number {
+                color: white;
+                background: transparent;
+                border-bottom: 2px solid #56FABB;
+                font-size: 20pt;
+                width: 100px;
+                outline: none;
+                text-align: center;
+                margin: 0 10px;
+            }
+        }
+
+        .Content__Down {
+            display: flex;
+            align-items: center;
+            width: 500px;
+            margin: 20px 0;
+            gap: 20px;
+
+            .Input__Range {
+                -webkit-appearance: none;
+                width: 100%;
+                border-radius: 100px;
+                height: 5px;
+                background: linear-gradient(90deg, rgba(76,254,186,1) 0%, rgba(218,250,164,1) 100%);
+
+                &::-webkit-slider-thumb {
+                    -webkit-appearance: none;
+                    width: 20px;
+                    height: 20px;
+                    background: #ffffff;
+                    border: 2px solid rgba(76,254,186,1);
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .Range {
+        .Range__Content {
+            .Content__Up {
+                width: 400px;
+            }
+
+            .Content__Down {
+                width: 100%;
+
+                .Input__Range {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .Range {
+        .Range__Content {
+            .Content__Up {
+                width: 300px;
+            }
+
+            .Content__Down {
+                width: 300px;
+
+                .Input__Range {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
